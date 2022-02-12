@@ -23,7 +23,7 @@ public class JasyptConfig {
         config.setKeyObtentionIterations("1000");   // 반복 해싱 수
         config.setPoolSize("1");                    // 인스턴스 풀
         config.setSaltGeneratorClassName("org.jasypt.salt.RandomSaltGenerator"); // salt 생성 클래스(랜덤)
-        config.setStringOutputType("base64");       //인코딩
+        config.setStringOutputType("base64");       // 인코딩
         encryptor.setConfig(config);
         return encryptor;
     }

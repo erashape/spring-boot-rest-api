@@ -43,6 +43,13 @@ jasypt:
 server:
   port: 8080
 
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: trace
+
 management:
   endpoints:
     web:
