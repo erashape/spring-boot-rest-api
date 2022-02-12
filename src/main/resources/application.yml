@@ -1,0 +1,54 @@
+spring:
+  profiles:
+    default: local
+
+---
+
+spring:
+  profiles:
+    active: local
+
+---
+
+spring:
+  profiles:
+    active: dev
+
+---
+
+#common
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:~/testdb
+    username: sa
+    password: ENC(o5tMtVG8cM9GPnPkNIk+mQ==)
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create  # 기본 none!!
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        exclude: heapdump, threaddump
+        include: health, refresh
+  server:
+    port: 8089
