@@ -24,6 +24,9 @@ public class ManagerEntity {
     @Column(length = 256, nullable = false)
     private String email;       // 매니저 이메일 주소
 
+    @Column(nullable = false, columnDefinition = "false")
+    private boolean isDelete;
+
     @CreatedDate
     private LocalDateTime createdDate;
 

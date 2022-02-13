@@ -1,36 +1,33 @@
 package com.healthapi.advice.exception;
 
 import com.healthapi.common.ResponseCode;
+import lombok.Getter;
 
 public class CustomException extends RuntimeException {
     private static final long serialVersionUID = 1L;
 
+    @Getter
     private String code;
-    private ResponseCode responseCode;
 
-    public ResponseCode getResponseCode() {
-        return responseCode;
-    }
+    @Getter
+    private String customMessage;
 
     public CustomException(String code) {
-        super(ResponseCode.getResponse(code).getMessage());
         this.code = code;
-        this.responseCode = ResponseCode.getResponse(code);
     }
 
-    public CustomException(String code, Throwable cause) {
-        super(ResponseCode.getResponse(code).getMessage(), cause);
+    public CustomException(String code, String customMessage) {
+        super(customMessage);
         this.code = code;
-        this.responseCode = ResponseCode.getResponse(code);
+        this.customMessage = customMessage;
     }
 
     public CustomException(ResponseCode responseCode) {
         super(responseCode.getMessage());
-        this.responseCode = responseCode;
     }
 
-    public CustomException(ResponseCode responseCode, Throwable cause) {
-        super(responseCode.getMessage(), cause);
-        this.responseCode = responseCode;
+    public CustomException(ResponseCode responseCode, String customMessage) {
+        super(customMessage);
+        this.customMessage = customMessage;
     }
 }

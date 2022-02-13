@@ -10,7 +10,7 @@ import javax.persistence.PersistenceContext;
 
 @EnableJpaAuditing
 @Configuration
-public class JPAQueryFactoryConfiguration {
+public class JPAQueryFactoryConfig {
 
     @PersistenceContext
     private EntityManager entityManager;
