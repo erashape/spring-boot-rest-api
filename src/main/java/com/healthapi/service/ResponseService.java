@@ -1,7 +1,7 @@
 package com.healthapi.service;
 
 import com.healthapi.common.ResponseCode;
-import com.healthapi.model.CommonResult;
+import com.healthapi.dto.CommonResult;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

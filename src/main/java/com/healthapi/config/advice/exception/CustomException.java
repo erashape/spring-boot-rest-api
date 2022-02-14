@@ -1,4 +1,4 @@
-package com.healthapi.advice.exception;
+package com.healthapi.config.advice.exception;
 
 import com.healthapi.common.ResponseCode;
 import lombok.Getter;

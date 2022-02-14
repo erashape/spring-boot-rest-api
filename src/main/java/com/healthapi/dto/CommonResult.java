@@ -1,4 +1,4 @@
-package com.healthapi.model;
+package com.healthapi.dto;
 
 import lombok.Getter;
 import lombok.Setter;

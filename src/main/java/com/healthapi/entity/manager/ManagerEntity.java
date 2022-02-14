@@ -1,4 +1,4 @@
-package com.healthapi.manager;
+package com.healthapi.entity.manager;
 
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;

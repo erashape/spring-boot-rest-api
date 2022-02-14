@@ -1,7 +1,9 @@
-package com.healthapi.manager;
+package com.healthapi.controller.manager;
 
 import com.healthapi.common.ResponseCode;
-import com.healthapi.model.CommonResult;
+import com.healthapi.dto.manager.ManagerDto;
+import com.healthapi.service.manager.ManagerService;
+import com.healthapi.dto.CommonResult;
 import com.healthapi.service.ResponseService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

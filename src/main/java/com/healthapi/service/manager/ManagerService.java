@@ -1,8 +1,11 @@
-package com.healthapi.manager;
+package com.healthapi.service.manager;
 
-import com.healthapi.advice.exception.CustomException;
+import com.healthapi.config.advice.exception.CustomException;
 import com.healthapi.common.ResponseCode;
 import com.healthapi.config.CustomModelMapper;
+import com.healthapi.dto.manager.ManagerDto;
+import com.healthapi.entity.manager.ManagerEntity;
+import com.healthapi.repository.manager.ManagerRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -22,7 +25,7 @@ public class ManagerService {
         List<ManagerEntity> managerList = managerRepository.findAll();
 
         if(managerList.isEmpty()) {
-            throw new CustomException(ResponseCode.NOT_FOUND_USER.getCode(), "등록된 유저가 없음");
+            throw new CustomException(ResponseCode.NOT_FOUND_USER, "등록된 유저가 없음");
         }
 
         return managerList.stream().map(manager -> modelMapper.strictMapper().map(manager, ManagerDto.class)).toList();
@@ -34,7 +37,7 @@ public class ManagerService {
         Optional<ManagerEntity> mangerEntity = managerRepository.findById(id);
 
         if (mangerEntity.isEmpty()) {
-            throw new CustomException(ResponseCode.NOT_FOUND_USER.getCode());
+            throw new CustomException(ResponseCode.NOT_FOUND_USER);
         }
 
         return modelMapper.strictMapper().map(mangerEntity.get(), ManagerDto.class);
@@ -46,7 +49,7 @@ public class ManagerService {
         
         // 이미 존재하는 유저
         if(mangerEntity.isEmpty()) {
-            throw new CustomException(ResponseCode.EXIST_USER.getCode());
+            throw new CustomException(ResponseCode.EXIST_USER);
         }
 
         ManagerEntity managerEntity = modelMapper.strictMapper().map(managerDto, ManagerEntity.class);
@@ -61,7 +64,7 @@ public class ManagerService {
         
         // 업데이트 할 대상이 없을 경우
         if(managerEntity.isEmpty()) {
-            throw new CustomException(ResponseCode.NOT_FOUND_USER.getCode());
+            throw new CustomException(ResponseCode.NOT_FOUND_USER);
         }
         
         return modelMapper.strictMapper().map(managerRepository.save(managerEntity.get()), ManagerDto.class);

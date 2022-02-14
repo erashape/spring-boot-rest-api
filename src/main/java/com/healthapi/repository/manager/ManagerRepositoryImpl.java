@@ -1,5 +1,7 @@
-package com.healthapi.manager;
+package com.healthapi.repository.manager;
 
+import com.healthapi.entity.manager.ManagerEntity;
+import com.healthapi.manager.QManagerEntity;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.extern.slf4j.Slf4j;
 

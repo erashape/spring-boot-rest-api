@@ -1,4 +1,4 @@
-package com.healthapi.manager;
+package com.healthapi.dto.manager;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
