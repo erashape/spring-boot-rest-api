@@ -18,7 +18,9 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -33,13 +35,13 @@ class ManagerServiceTest {
     private ManagerRepository managerRepository;
 
     @Test
-    @DisplayName("사용자 목록 조회(성공)")
+    @DisplayName("사용자 목록 조회")
     void findAll() {
 
     }
 
     @Test
-    @DisplayName("특정 사용자 정보 조회([equals|notEquals|throws])")
+    @DisplayName("특정 사용자 정보 조회")
     void findById() {
         ManagerEntity managerEntity = ManagerEntity.builder()
                 .id(0L)
@@ -64,10 +66,71 @@ class ManagerServiceTest {
 
     @Test
     void create() {
+        // given
+        ManagerDto before = ManagerDto.builder()
+                .id(0L)
+                .name("test")
+                .email("test@test.com")
+                .isDelete(false)
+                .createdDate(LocalDateTime.now())
+                .modifiedDate(LocalDateTime.now())
+                .build();
+
+        ManagerEntity after = ManagerEntity.builder()
+                .id(0L)
+                .name("test")
+                .email("test@test.com")
+                .isDelete(false)
+                .createdDate(LocalDateTime.now())
+                .modifiedDate(LocalDateTime.now())
+                .build();
+
+        when(managerRepository.findById(anyLong()))
+                .thenReturn(Optional.empty())
+                .thenThrow(new NullPointerException());
+        when(managerRepository.save(any()))
+                .thenReturn(after)
+                .thenThrow(new NullPointerException());
+
+        // when
+        ManagerDto result = managerService.create(before);
+
+        // than
+        assertEquals(result.getId(), after.getId());
+        assertThrows(NullPointerException.class, () -> managerService.create(before));
     }
 
     @Test
     void update() {
+        ManagerDto before = ManagerDto.builder()
+                .id(0L)
+                .name("test")
+                .email("test@test.com")
+                .isDelete(false)
+                .createdDate(LocalDateTime.now())
+                .modifiedDate(LocalDateTime.now())
+                .build();
+
+        ManagerEntity after = ManagerEntity.builder()
+                .id(0L)
+                .name("test")
+                .email("test@test.com")
+                .isDelete(false)
+                .createdDate(LocalDateTime.now())
+                .modifiedDate(LocalDateTime.now())
+                .build();
+
+        given(managerRepository.findById(anyLong()))
+                .willReturn(Optional.empty())
+                .willThrow(new NullPointerException());
+        given(managerRepository.save(any()))
+                .willReturn(after)
+                .willThrow(new NullPointerException());
+
+        ManagerDto result = managerService.create(before);
+
+        assertEquals(result.getId(), after.getId());
+        assertThrows(NullPointerException.class, () -> managerService.create(before));
     }
 
     @Test

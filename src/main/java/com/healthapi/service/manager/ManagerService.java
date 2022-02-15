@@ -48,7 +48,7 @@ public class ManagerService {
         Optional<ManagerEntity> mangerEntity = managerRepository.findById(managerDto.getId());
         
         // 이미 존재하는 유저
-        if(mangerEntity.isEmpty()) {
+        if(!mangerEntity.isEmpty()) {
             throw new CustomException(ResponseCode.EXIST_USER);
         }
 

@@ -22,6 +22,7 @@ repositories {
 
 ext {
     set('snippetsDir', file("build/generated-snippets"))
+    set('springCloudVersion', "2021.0.0")
 }
 
 dependencies {
@@ -31,6 +32,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'com.google.code.gson:gson:2.9.0'
     implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.4'
     implementation 'org.modelmapper:modelmapper:2.4.5'
@@ -50,6 +52,12 @@ dependencies {
     testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
     testImplementation 'org.springframework.security:spring-security-test'
     testImplementation group: 'com.h2database', name: 'h2', version: '2.1.210'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
 }
 
 // QueryDSL (Q-Class 생성 위치 설정)
