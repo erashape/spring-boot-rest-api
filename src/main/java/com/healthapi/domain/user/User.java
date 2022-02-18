@@ -1,4 +1,4 @@
-package com.healthapi.entity.manager;
+package com.healthapi.domain.user;
 
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 @Getter
 @Builder
 @AllArgsConstructor
-@NoArgsConstructor
-@Entity(name = "manager")
-public class ManagerEntity {
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@Entity(name = "user")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

@@ -1,4 +1,4 @@
-package com.healthapi.common;
+package com.healthapi.response;
 
 import lombok.Getter;
 

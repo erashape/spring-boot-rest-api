@@ -1,4 +1,4 @@
-package com.healthapi.dto;
+package com.healthapi.response;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +7,7 @@ import lombok.ToString;
 @ToString
 @Getter
 @Setter
-public class CommonResult<T> {
+public class ApiResponse<T> {
     private int status;
 
     private String code;

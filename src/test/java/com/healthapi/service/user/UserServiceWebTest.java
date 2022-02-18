@@ -1,7 +1,7 @@
-package com.healthapi.service.manager;
+package com.healthapi.service.user;
 
 import com.healthapi.config.CustomModelMapper;
-import com.healthapi.repository.manager.ManagerRepository;
+import com.healthapi.repository.user.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -11,21 +11,16 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 
 //@ImportAutoConfiguration(RefreshAutoConfiguration.class)
 @WebMvcTest
-class ManagerServiceWebTest {
+class UserServiceWebTest {
     @InjectMocks
-    private ManagerService managerService;
+    private UserService userService;
 
     @Spy
     private CustomModelMapper modelMapper;
 
     @Mock
-    private ManagerRepository managerRepository;
+    private UserRepository userRepository;
 
-    /**
-     * RefreshScope는 전체 컨테이너가 필요
-     * SpringBootTest를 사용해야 한다는 뜻인데.. 너무 느림
-     * RefreshAutoConfiguration를 사용하면 SpyBean Annotation으로 로딩 가능하지만... 좀..
-     */
     @Test
     @DisplayName("RefreshScope 테스트트")
     void findAll() {

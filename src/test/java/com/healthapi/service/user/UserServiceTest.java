@@ -1,11 +1,11 @@
-package com.healthapi.service.manager;
+package com.healthapi.service.user;
 
-import com.healthapi.common.ResponseCode;
+import com.healthapi.response.ResponseCode;
 import com.healthapi.config.CustomModelMapper;
-import com.healthapi.config.advice.exception.CustomException;
-import com.healthapi.dto.manager.ManagerDto;
-import com.healthapi.entity.manager.ManagerEntity;
-import com.healthapi.repository.manager.ManagerRepository;
+import com.healthapi.response.ApiException;
+import com.healthapi.service.dto.user.UserDto;
+import com.healthapi.domain.user.User;
+import com.healthapi.repository.user.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -24,15 +24,15 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class ManagerServiceTest {
+class UserServiceTest {
     @InjectMocks
-    private ManagerService managerService;
+    private UserService userService;
 
     @Spy
     private CustomModelMapper modelMapper;
 
     @Mock
-    private ManagerRepository managerRepository;
+    private UserRepository userRepository;
 
     @Test
     @DisplayName("사용자 목록 조회")
@@ -43,7 +43,7 @@ class ManagerServiceTest {
     @Test
     @DisplayName("특정 사용자 정보 조회")
     void findById() {
-        ManagerEntity managerEntity = ManagerEntity.builder()
+        User user = User.builder()
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
@@ -52,22 +52,22 @@ class ManagerServiceTest {
                 .modifiedDate(LocalDateTime.now())
                 .build();
 
-        when(managerRepository.findById(anyLong()))
-                .thenReturn(Optional.of(managerEntity))
+        when(userRepository.findById(anyLong()))
+                .thenReturn(Optional.of(user))
                 .thenReturn(Optional.empty())
-                .thenThrow(new CustomException(ResponseCode.NOT_FOUND_USER));
+                .thenThrow(new ApiException(ResponseCode.NOT_FOUND_USER));
 
-        ManagerDto compareResult = modelMapper.strictMapper().map(managerEntity, ManagerDto.class);
+        UserDto compareResult = modelMapper.strictMapper().map(user, UserDto.class);
 
-        assertEquals(compareResult, managerService.findById(0L));       // 검색한 결과와 일치 할 경우
-        assertThrows(CustomException.class, () -> managerService.findById(0L));     // 조회된 결과가 없을 경우
-        assertThrows(CustomException.class, () -> managerService.findById(0L));     // 테스트
+        assertEquals(compareResult, userService.findById(0L));       // 검색한 결과와 일치 할 경우
+        assertThrows(ApiException.class, () -> userService.findById(0L));     // 조회된 결과가 없을 경우
+        assertThrows(ApiException.class, () -> userService.findById(0L));     // 테스트
     }
 
     @Test
     void create() {
         // given
-        ManagerDto before = ManagerDto.builder()
+        UserDto before = UserDto.builder()
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
@@ -76,7 +76,7 @@ class ManagerServiceTest {
                 .modifiedDate(LocalDateTime.now())
                 .build();
 
-        ManagerEntity after = ManagerEntity.builder()
+        User after = User.builder()
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
@@ -85,24 +85,24 @@ class ManagerServiceTest {
                 .modifiedDate(LocalDateTime.now())
                 .build();
 
-        when(managerRepository.findById(anyLong()))
+        when(userRepository.findById(anyLong()))
                 .thenReturn(Optional.empty())
                 .thenThrow(new NullPointerException());
-        when(managerRepository.save(any()))
+        when(userRepository.save(any()))
                 .thenReturn(after)
                 .thenThrow(new NullPointerException());
 
         // when
-        ManagerDto result = managerService.create(before);
+        UserDto result = userService.create(before);
 
         // than
         assertEquals(result.getId(), after.getId());
-        assertThrows(NullPointerException.class, () -> managerService.create(before));
+        assertThrows(NullPointerException.class, () -> userService.create(before));
     }
 
     @Test
     void update() {
-        ManagerDto before = ManagerDto.builder()
+        UserDto before = UserDto.builder()
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
@@ -111,7 +111,7 @@ class ManagerServiceTest {
                 .modifiedDate(LocalDateTime.now())
                 .build();
 
-        ManagerEntity after = ManagerEntity.builder()
+        User after = User.builder()
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
@@ -120,17 +120,17 @@ class ManagerServiceTest {
                 .modifiedDate(LocalDateTime.now())
                 .build();
 
-        given(managerRepository.findById(anyLong()))
+        given(userRepository.findById(anyLong()))
                 .willReturn(Optional.empty())
                 .willThrow(new NullPointerException());
-        given(managerRepository.save(any()))
+        given(userRepository.save(any()))
                 .willReturn(after)
                 .willThrow(new NullPointerException());
 
-        ManagerDto result = managerService.create(before);
+        UserDto result = userService.create(before);
 
         assertEquals(result.getId(), after.getId());
-        assertThrows(NullPointerException.class, () -> managerService.create(before));
+        assertThrows(NullPointerException.class, () -> userService.create(before));
     }
 
     @Test

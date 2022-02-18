@@ -1,8 +1,8 @@
-package com.healthapi.config.advice;
+package com.healthapi.config;
 
-import com.healthapi.config.advice.exception.CustomException;
-import com.healthapi.common.ResponseCode;
-import com.healthapi.dto.CommonResult;
+import com.healthapi.response.ApiException;
+import com.healthapi.response.ResponseCode;
+import com.healthapi.response.ApiResponse;
 import com.healthapi.service.ResponseService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -17,19 +17,20 @@ public class ControllerExceptionHandler {
     private final ResponseService responseService;
 
     @ExceptionHandler(Exception.class)
-    protected CommonResult<ResponseCode> exception(Exception e) {
+    protected ApiResponse<ResponseCode> exception(Exception e) {
         log.error("Exception", e);
         log.warn("Exception message:[{}]", e.getMessage());
 
         return responseService.responseResult(ResponseCode.SERVER_ERROR);
     }
 
-    @ExceptionHandler(CustomException.class)
-    protected CommonResult<ResponseCode> customException(CustomException e) {
-        log.warn("CustomException message/customMessage:[{}/{}]", e.getMessage(), e.getCustomMessage());
+    @ExceptionHandler(ApiException.class)
+    protected ApiResponse<ResponseCode> customException(ApiException e) {
+        log.info("Response Message:[{}]", e.getMessage());
+        log.warn("Response message:[{}]", e.getMessage());
 
-        if(StringUtils.hasText(e.getCustomMessage())) {
-            return responseService.responseResult(ResponseCode.getResponse(e.getCode()), e.getCustomMessage());
+        if(StringUtils.hasText(e.getMessage())) {
+            return responseService.responseResult(ResponseCode.getResponse(e.getCode()), e.getMessage());
         }
 
         return responseService.responseResult(ResponseCode.getResponse(e.getCode()));
