@@ -11,7 +11,6 @@ import java.nio.charset.StandardCharsets;
 
 @Configuration
 public class ResponseMessageConfig {
-
     @Bean
     public HttpMessageConverter<String> messageConverter() {
          return new StringHttpMessageConverter(StandardCharsets.UTF_8);

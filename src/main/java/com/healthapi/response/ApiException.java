@@ -2,31 +2,30 @@ package com.healthapi.response;
 
 import lombok.Getter;
 
+@Getter
 public class ApiException extends RuntimeException {
-    private static final long serialVersionUID = 1L;
+    private ResponseCode responseCode;
 
-    @Getter
-    private String code;
-
-    @Getter
     private String message;
 
-    public ApiException(String code) {
-        this.code = code;
-    }
-
-    public ApiException(String code, String message) {
-        super(message);
-        this.code = code;
-        this.message = message;
-    }
-
     public ApiException(ResponseCode responseCode) {
-        super(responseCode.getMessage());
+        this.responseCode = responseCode;
+    }
+
+    public ApiException(ResponseCode responseCode, Exception e) {
+        super(e);
+        this.responseCode = responseCode;
+        this.message = e.getMessage();
     }
 
     public ApiException(ResponseCode responseCode, String message) {
-        super(message);
+        this.responseCode = responseCode;
+        this.message = message;
+    }
+
+    public ApiException(ResponseCode responseCode, String message, Exception e) {
+        super(e);
+        this.responseCode = responseCode;
         this.message = message;
     }
 }

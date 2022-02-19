@@ -1,5 +1,6 @@
 package com.healthapi.repository.user;
 
+import com.healthapi.domain.user.QUser;
 import com.healthapi.domain.user.User;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.extern.slf4j.Slf4j;
