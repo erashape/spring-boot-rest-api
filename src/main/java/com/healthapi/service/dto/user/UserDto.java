@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class UserDto {
     private long id;
-    private String name;        // 매니저 이름
-    private String email;       // 매니저 이메일 주소
+    private String name;        // 사용자 이름
+    private String email;       // 사용자 이메일 주소
     private boolean isDelete;
     private LocalDateTime createdDate;
     private LocalDateTime modifiedDate;

@@ -17,14 +17,14 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/user/list")
-    public ApiResponse<List<UserDto>> findUsers() {
+    public ApiResponse<List<UserDto>> findAll() {
         List<UserDto> user = userService.findAll();
 
         return ApiResponse.result(user);
     }
 
     @GetMapping("/user/{id}")
-    public ApiResponse<UserDto> findUser(@PathVariable("id") long id) {
+    public ApiResponse<UserDto> findById(@PathVariable("id") long id) {
         return ApiResponse.result(userService.findById(id));
     }
 
