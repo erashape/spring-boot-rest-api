@@ -1,6 +1,5 @@
 package com.healthapi.service.dto.user;
 
-import com.healthapi.domain.user.User;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -16,15 +15,4 @@ public class UserDto {
     private boolean delete;
     private LocalDateTime createdDate;
     private LocalDateTime modifiedDate;
-
-    public static UserDto reverse(User user) {
-        return UserDto.builder()
-                .id(user.getId())
-                .name(user.getName())
-                .email(user.getEmail())
-                .delete(user.isDelete())
-                .createdDate(user.getCreatedDate())
-                .modifiedDate(user.getModifiedDate())
-                .build();
-    }
 }

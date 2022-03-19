@@ -1,0 +1,1135 @@
+2022/03/19 18:36:30,248 [INFO ]  [org.springframework.boot.StartupInfoLogger] [restartedMain]- Starting HealthApiApplication using Java 17.0.2 on DESKTOP-FN0KFSU with PID 15376 (C:\Users\erash\IdeaProjects\spring-boot-rest-api\out\production\classes started by erash in C:\Users\erash\IdeaProjects\spring-boot-rest-api)
+ -2022/03/19 18:36:30,267 [INFO ]  [org.springframework.boot.SpringApplication] [restartedMain]- The following profiles are active: local
+ -2022/03/19 18:36:33,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration boolean -> org.hibernate.type.BooleanType@4e760f3f
+ -2022/03/19 18:36:33,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration boolean -> org.hibernate.type.BooleanType@4e760f3f
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4e760f3f
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@11414714
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration true_false -> org.hibernate.type.TrueFalseType@78b595b2
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration yes_no -> org.hibernate.type.YesNoType@6178cf48
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte -> org.hibernate.type.ByteType@7f3b0f18
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte -> org.hibernate.type.ByteType@7f3b0f18
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7f3b0f18
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration character -> org.hibernate.type.CharacterType@57bc73b3
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration char -> org.hibernate.type.CharacterType@57bc73b3
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@57bc73b3
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration short -> org.hibernate.type.ShortType@290cc249
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration short -> org.hibernate.type.ShortType@290cc249
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Short -> org.hibernate.type.ShortType@290cc249
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration integer -> org.hibernate.type.IntegerType@6eac3793
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration int -> org.hibernate.type.IntegerType@6eac3793
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@6eac3793
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration long -> org.hibernate.type.LongType@10c474a
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration long -> org.hibernate.type.LongType@10c474a
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Long -> org.hibernate.type.LongType@10c474a
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration float -> org.hibernate.type.FloatType@231d660d
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration float -> org.hibernate.type.FloatType@231d660d
+ -2022/03/19 18:36:33,670 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Float -> org.hibernate.type.FloatType@231d660d
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration double -> org.hibernate.type.DoubleType@4692858d
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration double -> org.hibernate.type.DoubleType@4692858d
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4692858d
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@7160fa00
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@7160fa00
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration big_integer -> org.hibernate.type.BigIntegerType@734e8973
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@734e8973
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration string -> org.hibernate.type.StringType@3b56cf27
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.String -> org.hibernate.type.StringType@3b56cf27
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7a7aa524
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4a36af86
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration url -> org.hibernate.type.UrlType@725e2138
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.net.URL -> org.hibernate.type.UrlType@725e2138
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Duration -> org.hibernate.type.DurationType@197f60c9
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.Duration -> org.hibernate.type.DurationType@197f60c9
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Instant -> org.hibernate.type.InstantType@41d5024d
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.Instant -> org.hibernate.type.InstantType@41d5024d
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1c0673c1
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1c0673c1
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalDate -> org.hibernate.type.LocalDateType@57839c77
+ -2022/03/19 18:36:33,685 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@57839c77
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@2b6a3b47
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@2b6a3b47
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@783dda68
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@783dda68
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@b7606e4
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@b7606e4
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@73129e81
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@73129e81
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration date -> org.hibernate.type.DateType@1bfc20d9
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Date -> org.hibernate.type.DateType@1bfc20d9
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration time -> org.hibernate.type.TimeType@2c460b03
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2c460b03
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration timestamp -> org.hibernate.type.TimestampType@14087848
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@14087848
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Date -> org.hibernate.type.TimestampType@14087848
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@241dcbeb
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar -> org.hibernate.type.CalendarType@10591d15
+ -2022/03/19 18:36:33,701 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@10591d15
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@10591d15
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5dd95634
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@6a0d2d8b
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration locale -> org.hibernate.type.LocaleType@123c026c
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@123c026c
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration currency -> org.hibernate.type.CurrencyType@59e1c1de
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@59e1c1de
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration timezone -> org.hibernate.type.TimeZoneType@a9ae449
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@a9ae449
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration class -> org.hibernate.type.ClassType@52b12ac6
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Class -> org.hibernate.type.ClassType@52b12ac6
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@2afbe74d
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@2afbe74d
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6742c746
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration binary -> org.hibernate.type.BinaryType@2b2028d7
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte[] -> org.hibernate.type.BinaryType@2b2028d7
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [B -> org.hibernate.type.BinaryType@2b2028d7
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7d776149
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7d776149
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7d776149
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration row_version -> org.hibernate.type.RowVersionType@4ccb2b
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration image -> org.hibernate.type.ImageType@161412cb
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration characters -> org.hibernate.type.CharArrayType@67df9e35
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration char[] -> org.hibernate.type.CharArrayType@67df9e35
+ -2022/03/19 18:36:33,717 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [C -> org.hibernate.type.CharArrayType@67df9e35
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2c9f123f
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2c9f123f
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2c9f123f
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration text -> org.hibernate.type.TextType@68cd4e94
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ntext -> org.hibernate.type.NTextType@55e43a6
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration blob -> org.hibernate.type.BlobType@1df64729
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1df64729
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@3f8663f0
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration clob -> org.hibernate.type.ClobType@69a57a12
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@69a57a12
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration nclob -> org.hibernate.type.NClobType@c7cdf81
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@c7cdf81
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7d82568f
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@336f9b02
+ -2022/03/19 18:36:33,732 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration serializable -> org.hibernate.type.SerializableType@592d2d8f
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration object -> org.hibernate.type.ObjectType@25d87371
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@25d87371
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@15abea72
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1b73892d
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@26f0c7c6
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@271bbd15
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@6d293bfe
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@6a14fd97
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4a7ad9e4
+ -2022/03/19 18:36:33,748 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@307336ab
+ -2022/03/19 18:36:34,029 [DEBUG]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@65a32bb3] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3f7f17a9]
+ -2022/03/19 18:36:34,357 [DEBUG]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@65a32bb3] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@71fdb3a]
+ -2022/03/19 18:36:34,748 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [restartedMain]- 
+    
+    drop table if exists user CASCADE 
+ -2022/03/19 18:36:34,763 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [restartedMain]- 
+    
+    create table user (
+       id bigint generated by default as identity,
+        created_date timestamp,
+        delete false not null,
+        email varchar(256) not null,
+        modified_date timestamp,
+        name varchar(50) not null,
+        primary key (id)
+    )
+ -2022/03/19 18:36:34,779 [TRACE]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@71fdb3a] for TypeConfiguration
+ -2022/03/19 18:36:36,263 [INFO ]  [org.springframework.boot.StartupInfoLogger] [restartedMain]- Started HealthApiApplication in 6.619 seconds (JVM running for 9.155)
+ -2022/03/19 18:36:48,693 [INFO ]  [com.healthapi.config.log.CustomServletWrappingFilter] [http-nio-8080-exec-1]- [Request]: Uri:[/user/list] - Method/ContentType:[GET/null]
+ -2022/03/19 18:36:48,715 [INFO ]  [com.healthapi.service.user.UserService] [http-nio-8080-exec-1]- 전체 유저를 검색한다.
+ -2022/03/19 18:36:48,869 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [http-nio-8080-exec-1]- 
+    /* select
+        generatedAlias0 
+    from
+        user as generatedAlias0 */ select
+            user0_.id as id1_0_,
+            user0_.created_date as created_2_0_,
+            user0_.delete as delete3_0_,
+            user0_.email as email4_0_,
+            user0_.modified_date as modified5_0_,
+            user0_.name as name6_0_ 
+        from
+            user user0_
+ -2022/03/19 18:36:48,870 [ERROR]  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] [http-nio-8080-exec-1]- Table "USER" not found; SQL statement:
+/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_ [42102-200]
+ -2022/03/19 18:36:48,888 [ERROR]  [com.healthapi.config.ControllerExceptionHandler] [http-nio-8080-exec-1]- Exception
+ - org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.15.jar:5.3.15]
+	at jdk.proxy3.$Proxy150.findAll(Unknown Source) ~[?:?]
+	at com.healthapi.service.user.UserService.findAll(UserService.java:27) ~[classes/:?]
+	at com.healthapi.controller.user.UserController.findAll(UserController.java:21) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at com.healthapi.config.log.CustomServletWrappingFilter.doFilterWrapped(CustomServletWrappingFilter.java:34) ~[classes/:?]
+	at com.healthapi.config.log.CustomServletWrappingFilter.doFilterInternal(CustomServletWrappingFilter.java:25) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.3.jar:2.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1454) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:400) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:85) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	... 103 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_ [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableFilter(Parser.java:1970) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelect(Parser.java:2959) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseQuery(Parser.java:2620) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:868) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1454) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:400) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:85) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	... 103 more
+2022/03/19 18:36:48,903 [WARN ]  [com.healthapi.config.ControllerExceptionHandler] [http-nio-8080-exec-1]- Exception message:[could not prepare statement; SQL [/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement]
+ -2022/03/19 18:36:48,979 [INFO ]  [com.healthapi.config.log.CustomServletWrappingFilter] [http-nio-8080-exec-1]- [Response/EndTime:0.288]: {"responseCode":"OK","message":"정상 처리 되었습니다.","data":"SERVER_ERROR"}
+ -2022/03/19 18:40:12,272 [INFO ]  [org.springframework.boot.StartupInfoLogger] [restartedMain]- Starting HealthApiApplication using Java 17.0.2 on DESKTOP-FN0KFSU with PID 15764 (C:\Users\erash\IdeaProjects\spring-boot-rest-api\out\production\classes started by erash in C:\Users\erash\IdeaProjects\spring-boot-rest-api)
+ -2022/03/19 18:40:12,279 [INFO ]  [org.springframework.boot.SpringApplication] [restartedMain]- The following profiles are active: local
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration boolean -> org.hibernate.type.BooleanType@1fcf3c26
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration boolean -> org.hibernate.type.BooleanType@1fcf3c26
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1fcf3c26
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@445be7c3
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration true_false -> org.hibernate.type.TrueFalseType@789ae60d
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration yes_no -> org.hibernate.type.YesNoType@3e63cc6f
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte -> org.hibernate.type.ByteType@62cda5c1
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte -> org.hibernate.type.ByteType@62cda5c1
+ -2022/03/19 18:40:15,576 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@62cda5c1
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration character -> org.hibernate.type.CharacterType@7f5f2b7b
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration char -> org.hibernate.type.CharacterType@7f5f2b7b
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7f5f2b7b
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration short -> org.hibernate.type.ShortType@15bfe14c
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration short -> org.hibernate.type.ShortType@15bfe14c
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Short -> org.hibernate.type.ShortType@15bfe14c
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration integer -> org.hibernate.type.IntegerType@900bc24
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration int -> org.hibernate.type.IntegerType@900bc24
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@900bc24
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration long -> org.hibernate.type.LongType@6a853a3
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration long -> org.hibernate.type.LongType@6a853a3
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Long -> org.hibernate.type.LongType@6a853a3
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration float -> org.hibernate.type.FloatType@2e9f1196
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration float -> org.hibernate.type.FloatType@2e9f1196
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Float -> org.hibernate.type.FloatType@2e9f1196
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration double -> org.hibernate.type.DoubleType@54b1b811
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration double -> org.hibernate.type.DoubleType@54b1b811
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@54b1b811
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5cc15bbe
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5cc15bbe
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4bca90ab
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4bca90ab
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration string -> org.hibernate.type.StringType@71ef43f4
+ -2022/03/19 18:40:15,591 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.String -> org.hibernate.type.StringType@71ef43f4
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration nstring -> org.hibernate.type.StringNVarcharType@36f59e8a
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@79f79ece
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration url -> org.hibernate.type.UrlType@3679f3c5
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.net.URL -> org.hibernate.type.UrlType@3679f3c5
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Duration -> org.hibernate.type.DurationType@7d9a1629
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7d9a1629
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Instant -> org.hibernate.type.InstantType@656d1bd3
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.Instant -> org.hibernate.type.InstantType@656d1bd3
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6fcb5f23
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6fcb5f23
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalDate -> org.hibernate.type.LocalDateType@3737929
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@3737929
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@3d006c20
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@3d006c20
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@50c1c796
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@50c1c796
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@d1a643f
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@d1a643f
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4a7a7e01
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4a7a7e01
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration date -> org.hibernate.type.DateType@37c7b2a7
+ -2022/03/19 18:40:15,607 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Date -> org.hibernate.type.DateType@37c7b2a7
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration time -> org.hibernate.type.TimeType@55e595b7
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Time -> org.hibernate.type.TimeType@55e595b7
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration timestamp -> org.hibernate.type.TimestampType@43d8b406
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@43d8b406
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Date -> org.hibernate.type.TimestampType@43d8b406
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@201de9c2
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar -> org.hibernate.type.CalendarType@2dcfee4
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2dcfee4
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2dcfee4
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@6163d611
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@5413dbff
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration locale -> org.hibernate.type.LocaleType@54f76286
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@54f76286
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration currency -> org.hibernate.type.CurrencyType@5164f473
+ -2022/03/19 18:40:15,623 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5164f473
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration timezone -> org.hibernate.type.TimeZoneType@6912483b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6912483b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration class -> org.hibernate.type.ClassType@1e02bacf
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1e02bacf
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@4ac829c9
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@4ac829c9
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4fd930ef
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration binary -> org.hibernate.type.BinaryType@352f9b5
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte[] -> org.hibernate.type.BinaryType@352f9b5
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [B -> org.hibernate.type.BinaryType@352f9b5
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@271ff1b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@271ff1b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@271ff1b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration row_version -> org.hibernate.type.RowVersionType@582c87f9
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration image -> org.hibernate.type.ImageType@57ef5f22
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration characters -> org.hibernate.type.CharArrayType@6a1ee09b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration char[] -> org.hibernate.type.CharArrayType@6a1ee09b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [C -> org.hibernate.type.CharArrayType@6a1ee09b
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@a3d19cb
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@a3d19cb
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@a3d19cb
+ -2022/03/19 18:40:15,638 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration text -> org.hibernate.type.TextType@13fdeff9
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ntext -> org.hibernate.type.NTextType@776970eb
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration blob -> org.hibernate.type.BlobType@7510495c
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7510495c
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@39a91e95
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration clob -> org.hibernate.type.ClobType@2abb159f
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2abb159f
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration nclob -> org.hibernate.type.NClobType@705f43a
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@705f43a
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@18bb0d1c
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@35131a9c
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration serializable -> org.hibernate.type.SerializableType@4f6e75c3
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration object -> org.hibernate.type.ObjectType@14bcbb7c
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@14bcbb7c
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@236a9b1a
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@773414c5
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@49ebbf29
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7e4b8c5b
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@98e7ac3
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5ecbd50b
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@4a4d2b0c
+ -2022/03/19 18:40:15,654 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@68465f4a
+ -2022/03/19 18:40:15,920 [DEBUG]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3ce0365a] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@34a49ae7]
+ -2022/03/19 18:40:16,185 [DEBUG]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@3ce0365a] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1aae936b]
+ -2022/03/19 18:40:16,498 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [restartedMain]- 
+    
+    drop table if exists user CASCADE 
+ -2022/03/19 18:40:16,513 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [restartedMain]- 
+    
+    create table user (
+       id bigint generated by default as identity,
+        created_date timestamp,
+        delete false not null,
+        email varchar(256) not null,
+        modified_date timestamp,
+        name varchar(50) not null,
+        primary key (id)
+    )
+ -2022/03/19 18:40:16,529 [TRACE]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@1aae936b] for TypeConfiguration
+ -2022/03/19 18:40:18,170 [INFO ]  [org.springframework.boot.StartupInfoLogger] [restartedMain]- Started HealthApiApplication in 6.503 seconds (JVM running for 9.075)
+ -2022/03/19 18:40:26,307 [INFO ]  [com.healthapi.config.log.CustomServletWrappingFilter] [http-nio-8080-exec-1]- [Request]: Uri:[/user/list] - Method/ContentType:[GET/null]
+ -2022/03/19 18:40:26,328 [INFO ]  [com.healthapi.service.user.UserService] [http-nio-8080-exec-1]- 전체 유저를 검색한다.
+ -2022/03/19 18:40:26,456 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [http-nio-8080-exec-1]- 
+    /* select
+        generatedAlias0 
+    from
+        user as generatedAlias0 */ select
+            user0_.id as id1_0_,
+            user0_.created_date as created_2_0_,
+            user0_.delete as delete3_0_,
+            user0_.email as email4_0_,
+            user0_.modified_date as modified5_0_,
+            user0_.name as name6_0_ 
+        from
+            user user0_
+ -2022/03/19 18:40:26,458 [ERROR]  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] [http-nio-8080-exec-1]- Table "USER" not found; SQL statement:
+/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_ [42102-200]
+ -2022/03/19 18:40:26,475 [ERROR]  [com.healthapi.config.ControllerExceptionHandler] [http-nio-8080-exec-1]- Exception
+ - org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.15.jar:5.3.15]
+	at jdk.proxy3.$Proxy150.findAll(Unknown Source) ~[?:?]
+	at com.healthapi.service.user.UserService.findAll(UserService.java:27) ~[classes/:?]
+	at com.healthapi.controller.user.UserController.findAll(UserController.java:21) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at com.healthapi.config.log.CustomServletWrappingFilter.doFilterWrapped(CustomServletWrappingFilter.java:34) ~[classes/:?]
+	at com.healthapi.config.log.CustomServletWrappingFilter.doFilterInternal(CustomServletWrappingFilter.java:25) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.3.jar:2.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1454) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:400) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:85) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	... 103 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_ [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableFilter(Parser.java:1970) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelect(Parser.java:2959) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseQuery(Parser.java:2620) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:868) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1454) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:400) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:85) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	... 103 more
+2022/03/19 18:40:26,489 [WARN ]  [com.healthapi.config.ControllerExceptionHandler] [http-nio-8080-exec-1]- Exception message:[could not prepare statement; SQL [/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement]
+ -2022/03/19 18:40:26,575 [INFO ]  [com.healthapi.config.log.CustomServletWrappingFilter] [http-nio-8080-exec-1]- [Response/EndTime:0.27]: {"responseCode":"OK","message":"정상 처리 되었습니다.","data":"SERVER_ERROR"}
+ -2022/03/19 18:47:07,160 [INFO ]  [org.springframework.boot.StartupInfoLogger] [restartedMain]- Starting HealthApiApplication using Java 17.0.2 on DESKTOP-FN0KFSU with PID 13172 (C:\Users\erash\IdeaProjects\spring-boot-rest-api\out\production\classes started by erash in C:\Users\erash\IdeaProjects\spring-boot-rest-api)
+ -2022/03/19 18:47:07,160 [INFO ]  [org.springframework.boot.SpringApplication] [restartedMain]- The following profiles are active: local
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration boolean -> org.hibernate.type.BooleanType@4a72dae9
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration boolean -> org.hibernate.type.BooleanType@4a72dae9
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4a72dae9
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@3950dab2
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration true_false -> org.hibernate.type.TrueFalseType@3f551e44
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration yes_no -> org.hibernate.type.YesNoType@2e9171e5
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte -> org.hibernate.type.ByteType@408e688e
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte -> org.hibernate.type.ByteType@408e688e
+ -2022/03/19 18:47:10,334 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@408e688e
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration character -> org.hibernate.type.CharacterType@3c545dbf
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration char -> org.hibernate.type.CharacterType@3c545dbf
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3c545dbf
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration short -> org.hibernate.type.ShortType@68d56f02
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration short -> org.hibernate.type.ShortType@68d56f02
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Short -> org.hibernate.type.ShortType@68d56f02
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration integer -> org.hibernate.type.IntegerType@21b25dd2
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration int -> org.hibernate.type.IntegerType@21b25dd2
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@21b25dd2
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration long -> org.hibernate.type.LongType@3dad0c2
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration long -> org.hibernate.type.LongType@3dad0c2
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Long -> org.hibernate.type.LongType@3dad0c2
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration float -> org.hibernate.type.FloatType@4bf38825
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration float -> org.hibernate.type.FloatType@4bf38825
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4bf38825
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration double -> org.hibernate.type.DoubleType@61363f05
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration double -> org.hibernate.type.DoubleType@61363f05
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@61363f05
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@12715be
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@12715be
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration big_integer -> org.hibernate.type.BigIntegerType@55b3331a
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@55b3331a
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration string -> org.hibernate.type.StringType@62d59c3d
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.String -> org.hibernate.type.StringType@62d59c3d
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration nstring -> org.hibernate.type.StringNVarcharType@10b47100
+ -2022/03/19 18:47:10,349 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@151dd5ed
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration url -> org.hibernate.type.UrlType@47c0a6ff
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.net.URL -> org.hibernate.type.UrlType@47c0a6ff
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Duration -> org.hibernate.type.DurationType@7bef67c4
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7bef67c4
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Instant -> org.hibernate.type.InstantType@d50838c
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.Instant -> org.hibernate.type.InstantType@d50838c
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3048b605
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3048b605
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalDate -> org.hibernate.type.LocalDateType@b56180d
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@b56180d
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@331c741a
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@331c741a
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@39aa3b41
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@39aa3b41
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@20af740c
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@20af740c
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4b0bc0aa
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4b0bc0aa
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration date -> org.hibernate.type.DateType@5d11325f
+ -2022/03/19 18:47:10,365 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Date -> org.hibernate.type.DateType@5d11325f
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration time -> org.hibernate.type.TimeType@57a803f8
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Time -> org.hibernate.type.TimeType@57a803f8
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration timestamp -> org.hibernate.type.TimestampType@292c75d8
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@292c75d8
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Date -> org.hibernate.type.TimestampType@292c75d8
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@19123d5b
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar -> org.hibernate.type.CalendarType@293a36e2
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@293a36e2
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@293a36e2
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@8b35668
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@1252996
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration locale -> org.hibernate.type.LocaleType@7a6bbb35
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7a6bbb35
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration currency -> org.hibernate.type.CurrencyType@2438f325
+ -2022/03/19 18:47:10,381 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2438f325
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration timezone -> org.hibernate.type.TimeZoneType@2d0adaf5
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2d0adaf5
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration class -> org.hibernate.type.ClassType@2df03de5
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Class -> org.hibernate.type.ClassType@2df03de5
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@59ed1345
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@59ed1345
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@13aaf2c2
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration binary -> org.hibernate.type.BinaryType@63cffb57
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration byte[] -> org.hibernate.type.BinaryType@63cffb57
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [B -> org.hibernate.type.BinaryType@63cffb57
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@257488da
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@257488da
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@257488da
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration row_version -> org.hibernate.type.RowVersionType@77895823
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration image -> org.hibernate.type.ImageType@98f6fb7
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration characters -> org.hibernate.type.CharArrayType@5e20e88e
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration char[] -> org.hibernate.type.CharArrayType@5e20e88e
+ -2022/03/19 18:47:10,396 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [C -> org.hibernate.type.CharArrayType@5e20e88e
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@f3fdcec
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@f3fdcec
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@f3fdcec
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration text -> org.hibernate.type.TextType@8960874
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration ntext -> org.hibernate.type.NTextType@6c641c85
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration blob -> org.hibernate.type.BlobType@26e8549
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@26e8549
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6a27d1d5
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration clob -> org.hibernate.type.ClobType@2734b041
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2734b041
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration nclob -> org.hibernate.type.NClobType@1efce86d
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@1efce86d
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@148b86b7
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@ffc7d5
+ -2022/03/19 18:47:10,412 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration serializable -> org.hibernate.type.SerializableType@954eea5
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration object -> org.hibernate.type.ObjectType@272351e0
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@272351e0
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1d2bed7f
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@9bb50c1
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3a7440a1
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@4a9897ea
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@89acbd3
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5bf4af59
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@439d9dce
+ -2022/03/19 18:47:10,428 [DEBUG]  [org.hibernate.type.BasicTypeRegistry] [restartedMain]- Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4d347590
+ -2022/03/19 18:47:10,693 [DEBUG]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7fdcbb73] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7082c4c8]
+ -2022/03/19 18:47:10,943 [DEBUG]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7fdcbb73] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@14cf9187]
+ -2022/03/19 18:47:11,287 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [restartedMain]- 
+    
+    drop table if exists user CASCADE 
+ -2022/03/19 18:47:11,287 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [restartedMain]- 
+    
+    create table user (
+       id bigint generated by default as identity,
+        created_date timestamp,
+        delete false not null,
+        email varchar(256) not null,
+        modified_date timestamp,
+        name varchar(50) not null,
+        primary key (id)
+    )
+ -2022/03/19 18:47:11,303 [TRACE]  [org.hibernate.type.spi.TypeConfiguration] [restartedMain]- Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@14cf9187] for TypeConfiguration
+ -2022/03/19 18:47:12,896 [INFO ]  [org.springframework.boot.StartupInfoLogger] [restartedMain]- Started HealthApiApplication in 6.269 seconds (JVM running for 8.391)
+ -2022/03/19 18:49:21,382 [INFO ]  [com.healthapi.config.log.CustomServletWrappingFilter] [http-nio-8080-exec-1]- [Request]: Uri:[/user/list] - Method/ContentType:[GET/null]
+ -2022/03/19 18:49:21,406 [INFO ]  [com.healthapi.service.user.UserService] [http-nio-8080-exec-1]- 전체 유저를 검색한다.
+ -2022/03/19 18:49:21,539 [DEBUG]  [org.hibernate.engine.jdbc.spi.SqlStatementLogger] [http-nio-8080-exec-1]- 
+    /* select
+        generatedAlias0 
+    from
+        user as generatedAlias0 */ select
+            user0_.id as id1_0_,
+            user0_.created_date as created_2_0_,
+            user0_.delete as delete3_0_,
+            user0_.email as email4_0_,
+            user0_.modified_date as modified5_0_,
+            user0_.name as name6_0_ 
+        from
+            user user0_
+ -2022/03/19 18:49:21,540 [ERROR]  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] [http-nio-8080-exec-1]- Table "USER" not found; SQL statement:
+/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_ [42102-200]
+ -2022/03/19 18:49:21,559 [ERROR]  [com.healthapi.config.ControllerExceptionHandler] [http-nio-8080-exec-1]- Exception
+ - org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:259) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.15.jar:5.3.15]
+	at jdk.proxy3.$Proxy150.findAll(Unknown Source) ~[?:?]
+	at com.healthapi.service.user.UserService.findAll(UserService.java:27) ~[classes/:?]
+	at com.healthapi.controller.user.UserController.findAll(UserController.java:21) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.15.jar:5.3.15]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.56.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at com.healthapi.config.log.CustomServletWrappingFilter.doFilterWrapped(CustomServletWrappingFilter.java:34) ~[classes/:?]
+	at com.healthapi.config.log.CustomServletWrappingFilter.doFilterInternal(CustomServletWrappingFilter.java:25) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.1.jar:5.6.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.3.jar:2.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.15.jar:5.3.15]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.56.jar:9.0.56]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:37) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1454) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:400) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:85) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	... 103 more
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_ [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:205) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:181) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.readTableFilter(Parser.java:1970) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelect(Parser.java:2959) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parseQuery(Parser.java:2620) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parsePrepared(Parser.java:868) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:843) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.parse(Parser.java:815) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.command.Parser.prepareCommand(Parser.java:738) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareLocal(Session.java:657) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.Session.prepareCommand(Session.java:595) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2868) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2850) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2677) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1454) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.6.4.Final.jar:5.6.4.Final]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:400) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:85) ~[spring-data-jpa-2.6.1.jar:2.6.1]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.1.jar:2.6.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.15.jar:5.3.15]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.15.jar:5.3.15]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.15.jar:5.3.15]
+	... 103 more
+2022/03/19 18:49:21,574 [WARN ]  [com.healthapi.config.ControllerExceptionHandler] [http-nio-8080-exec-1]- Exception message:[could not prepare statement; SQL [/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement]
+ -2022/03/19 18:49:21,600 [INFO ]  [com.healthapi.config.log.CustomServletWrappingFilter] [http-nio-8080-exec-1]- [Response/EndTime:0.222]: {"responseCode":"SERVER_ERROR","message":"시스템 오류입니다. 관리자에게 문의해주세요.","data":"could not prepare statement; SQL [/* select generatedAlias0 from user as generatedAlias0 */ select user0_.id as id1_0_, user0_.created_date as created_2_0_, user0_.delete as delete3_0_, user0_.email as email4_0_, user0_.modified_date as modified5_0_, user0_.name as name6_0_ from user user0_]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement"}
+ -

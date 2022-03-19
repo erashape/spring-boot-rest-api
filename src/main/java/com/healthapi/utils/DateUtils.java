@@ -2,6 +2,7 @@ package com.healthapi.utils;
 
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.util.StringUtils;
 
 import java.time.DateTimeException;
 import java.time.LocalDateTime;
@@ -12,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 public class DateUtils {
 
     public static String getNow(String format) {
-        format = "".equals(format) || isValid(format)  ? format : "yyyyMMdd";
+        format = !StringUtils.hasText(format) || isValid(format)  ? format : "yyyyMMdd";
         DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern(format);
         return  LocalDateTime.now().format(timeFormatter);
     }

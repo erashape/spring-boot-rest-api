@@ -30,8 +30,11 @@ public class ApiResponse<T> {
         return new ApiResponse<>(ResponseCode.OK);
     }
 
+    public static ApiResponse<String> failed() {
+        return new ApiResponse<>(ResponseCode.SERVER_ERROR);
+    }
+
     public static <T> ApiResponse<T> result(T data) {
         return new ApiResponse<>(ResponseCode.OK, data);
     }
-
 }

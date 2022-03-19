@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration >
+    <Properties>
+        <Property name="process">Spring Boot REST Api</Property>
+        <Property name="layoutPattern">%style{%d{yyyy/MM/dd HH:mm:ss,SSS}}{cyan} %highlight{[%-5p]}{FATAL=bg_red, ERROR=red,
+            INFO=green, DEBUG=blue}  [%C] %style{[%t]}{yellow}- %m%n -</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console_Appender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${layoutPattern}"/>
+        </Console>
+        <RollingFile name="File_Appender" fileName="logs/${process}.log" filePattern="logs/${process}_%d{yyyy-MM-dd}_%i.log.gz">
+            <PatternLayout pattern="${layoutPattern}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="50MB"/>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10" fileIndex="min"/>
+        </RollingFile>
+    </Appenders>
+    <!--    실제 Logger-->
+    <Loggers>
+        <Root level="ERROR" additivity="false">
+            <AppenderRef ref="Console_Appender"/>
+            <AppenderRef ref="File_Appender"/>
+        </Root>
+        <Logger name="com.healthapi" level="INFO" additivity="false">
+            <AppenderRef ref="Console_Appender" />
+            <AppenderRef ref="File_Appender"/>
+        </Logger>
+    </Loggers>
+</Configuration>

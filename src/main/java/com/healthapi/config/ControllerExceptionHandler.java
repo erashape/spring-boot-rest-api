@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RequiredArgsConstructor
 public class ControllerExceptionHandler {
     @ExceptionHandler(Exception.class)
-    protected ApiResponse<ResponseCode> exception(Exception e) {
+    protected ApiResponse<String> exception(Exception e) {
         log.error("Exception", e);
         log.warn("Exception message:[{}]", e.getMessage());
 
-        return ApiResponse.result(ResponseCode.SERVER_ERROR);
+        return ApiResponse.failed();
     }
 
     @ExceptionHandler(ApiException.class)

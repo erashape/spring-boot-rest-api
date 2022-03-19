@@ -26,26 +26,25 @@ public class UserService {
         log.info("전체 유저를 검색한다.");
         List<User> userList = userRepository.findAll();
 
-        if(userList.isEmpty()) {
+        if (userList.isEmpty()) {
             log.info(ResponseCode.NOT_FOUND_USER.getMessage());
             throw new ApiException(ResponseCode.NOT_FOUND_USER);
         }
 
-        return userList.stream().map(UserDto::reverse).toList();
-
+        return userList.stream().map(mapper::toDto).toList();
     }
 
     // 특정 유저를 검색한다.
     public UserDto findById(long id) {
         log.info("특정 유저를 검색한다.");
-        Optional<User> manger = userRepository.findById(id);
+        Optional<User> user = userRepository.findById(id);
 
-        if (manger.isEmpty()) {
+        if (user.isEmpty()) {
             log.info(ResponseCode.NOT_FOUND_USER.getMessage());
             throw new ApiException(ResponseCode.NOT_FOUND_USER);
         }
 
-        return UserDto.reverse(manger.get());
+        return mapper.toDto(user.get());
     }
 
     // 유저를 생성한다.
@@ -54,7 +53,7 @@ public class UserService {
         boolean isExist = userRepository.existsById(userDto.getId());
         
         // 이미 존재하는 유저
-        if(isExist) {
+        if (isExist) {
             log.info(ResponseCode.EXIST_USER.getMessage());
             throw new ApiException(ResponseCode.EXIST_USER);
         }
@@ -70,7 +69,7 @@ public class UserService {
         boolean isExist = userRepository.existsById(userDto.getId());
         
         // 업데이트 할 대상이 없을 경우
-        if(!isExist) {
+        if (!isExist) {
             log.info(ResponseCode.NOT_FOUND_USER.getMessage());
             throw new ApiException(ResponseCode.NOT_FOUND_USER);
         }
