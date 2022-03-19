@@ -3,7 +3,7 @@
     <Properties>
         <Property name="process">Spring Boot REST Api</Property>
         <Property name="layoutPattern">%style{%d{yyyy/MM/dd HH:mm:ss,SSS}}{cyan} %highlight{[%-5p]}{FATAL=bg_red, ERROR=red,
-            INFO=green, DEBUG=blue}  [%C] %style{[%t]}{yellow}- %m%n -</Property>
+            INFO=green, DEBUG=blue}[%X{traceId},%X{spanId}] [%C] %style{[%t]}{yellow}- %m%n -</Property>
     </Properties>
     <Appenders>
         <Console name="Console_Appender" target="SYSTEM_OUT">
