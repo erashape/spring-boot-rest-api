@@ -24,7 +24,7 @@
             <AppenderRef ref="Console_Appender"/>
             <AppenderRef ref="File_Appender"/>
         </Root>
-        <Logger name="com.healthapi" level="INFO" additivity="false">
+        <Logger name="com.health" level="INFO" additivity="false">
             <AppenderRef ref="Console_Appender" />
             <AppenderRef ref="File_Appender"/>
         </Logger>

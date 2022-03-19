@@ -6,7 +6,7 @@ plugins {
     id 'java'
 }
 
-group = 'com.restapi'
+group = 'com.health'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
