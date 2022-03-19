@@ -13,7 +13,7 @@ public class UserDto {
     private long id;
     private String name;        // 사용자 이름
     private String email;       // 사용자 이메일 주소
-    private boolean isDelete;
+    private boolean delete;
     private LocalDateTime createdDate;
     private LocalDateTime modifiedDate;
 
@@ -22,7 +22,7 @@ public class UserDto {
                 .id(user.getId())
                 .name(user.getName())
                 .email(user.getEmail())
-                .isDelete(user.isDelete())
+                .delete(user.isDelete())
                 .createdDate(user.getCreatedDate())
                 .modifiedDate(user.getModifiedDate())
                 .build();

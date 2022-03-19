@@ -48,7 +48,7 @@ class UserServiceTest {
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
-                .isDelete(false)
+                .delete(false)
                 .createdDate(LocalDateTime.now())
                 .modifiedDate(LocalDateTime.now())
                 .build();
@@ -72,7 +72,7 @@ class UserServiceTest {
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
-                .isDelete(false)
+                .delete(false)
                 .createdDate(LocalDateTime.now())
                 .modifiedDate(LocalDateTime.now())
                 .build();
@@ -81,7 +81,7 @@ class UserServiceTest {
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
-                .isDelete(false)
+                .delete(false)
                 .createdDate(LocalDateTime.now())
                 .modifiedDate(LocalDateTime.now())
                 .build();
@@ -107,7 +107,7 @@ class UserServiceTest {
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
-                .isDelete(false)
+                .delete(false)
                 .createdDate(LocalDateTime.now())
                 .modifiedDate(LocalDateTime.now())
                 .build();
@@ -116,7 +116,7 @@ class UserServiceTest {
                 .id(0L)
                 .name("test")
                 .email("test@test.com")
-                .isDelete(false)
+                .delete(false)
                 .createdDate(LocalDateTime.now())
                 .modifiedDate(LocalDateTime.now())
                 .build();

@@ -45,7 +45,7 @@ class UserControllerTest {
                         .id(0L)
                         .name("테스트")
                         .email("test@test.com")
-                        .isDelete(false)
+                        .delete(false)
                         .createdDate(LocalDateTime.now())
                         .modifiedDate(LocalDateTime.now())
                         .build());
@@ -68,7 +68,7 @@ class UserControllerTest {
                                 fieldWithPath("id").type(JsonFieldType.NUMBER).description("아이디"),
                                 fieldWithPath("name").type(JsonFieldType.STRING).description("사용자이름"),
                                 fieldWithPath("email").type(JsonFieldType.STRING).description("사용자이메일"),
-                                fieldWithPath("isDelete").type(JsonFieldType.STRING).description("삭제여부"),
+                                fieldWithPath("delete").type(JsonFieldType.STRING).description("삭제여부"),
                                 fieldWithPath("createdDate").type(JsonFieldType.STRING).description("생성일자"),
                                 fieldWithPath("modifiedDate").type(JsonFieldType.STRING).description("수정일자")
                         )

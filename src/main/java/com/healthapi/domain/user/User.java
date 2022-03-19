@@ -25,7 +25,7 @@ public class User {
     private String email;       // 매니저 이메일 주소
 
     @Column(nullable = false, columnDefinition = "false")
-    private boolean isDelete;
+    private boolean delete;
 
     @CreatedDate
     private LocalDateTime createdDate;
