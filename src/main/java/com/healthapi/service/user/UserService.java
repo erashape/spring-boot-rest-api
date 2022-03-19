@@ -1,13 +1,14 @@
 package com.healthapi.service.user;
 
+import com.healthapi.domain.user.User;
+import com.healthapi.mapper.user.UserMapper;
+import com.healthapi.repository.user.UserRepository;
 import com.healthapi.response.ApiException;
 import com.healthapi.response.ResponseCode;
-import com.healthapi.config.CustomModelMapper;
 import com.healthapi.service.dto.user.UserDto;
-import com.healthapi.domain.user.User;
-import com.healthapi.repository.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,7 +18,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class UserService {
-    private final CustomModelMapper modelMapper;
+    private final UserMapper mapper = Mappers.getMapper(UserMapper.class);
     private final UserRepository userRepository;
 
     // 전체 유저를 검색한다.
@@ -58,9 +59,9 @@ public class UserService {
             throw new ApiException(ResponseCode.EXIST_USER);
         }
 
-        User user = modelMapper.strictMapper().map(userDto, User.class);
+        User user = mapper.toEntity(userDto);
 
-        return UserDto.reverse(userRepository.save(user));
+        return mapper.toDto(userRepository.save(user));
     }
 
     // 특정 유저의 정보를 수정한다.
@@ -74,9 +75,9 @@ public class UserService {
             throw new ApiException(ResponseCode.NOT_FOUND_USER);
         }
 
-        User user = modelMapper.strictMapper().map(userDto, User.class);
+        User user = mapper.toEntity(userDto);
         
-        return UserDto.reverse(userRepository.save(user));
+        return mapper.toDto(userRepository.save(user));
     }
 
     // 특정 유저의 정보를 삭제한다.
@@ -93,8 +94,8 @@ public class UserService {
         userDto.setName("");
         userDto.setDelete(true);
 
-        User result = modelMapper.strictMapper().map(userDto, User.class);
+        User result = mapper.toEntity(userDto);
 
-        return UserDto.reverse(userRepository.save(result));
+        return mapper.toDto(userRepository.save(result));
     }
 }

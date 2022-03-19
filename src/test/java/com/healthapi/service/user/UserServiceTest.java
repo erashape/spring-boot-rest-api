@@ -1,11 +1,11 @@
 package com.healthapi.service.user;
 
-import com.healthapi.response.ResponseCode;
-import com.healthapi.config.CustomModelMapper;
-import com.healthapi.response.ApiException;
-import com.healthapi.service.dto.user.UserDto;
 import com.healthapi.domain.user.User;
+import com.healthapi.mapper.user.UserMapper;
 import com.healthapi.repository.user.UserRepository;
+import com.healthapi.response.ApiException;
+import com.healthapi.response.ResponseCode;
+import com.healthapi.service.dto.user.UserDto;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -17,7 +17,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.BDDMockito.given;
@@ -29,7 +30,7 @@ class UserServiceTest {
     private UserService userService;
 
     @Spy
-    private CustomModelMapper modelMapper;
+    private UserMapper mapper;
 
     @Mock
     private UserRepository userRepository;
@@ -57,7 +58,7 @@ class UserServiceTest {
                 .thenReturn(Optional.empty())
                 .thenThrow(new ApiException(ResponseCode.NOT_FOUND_USER));
 
-        UserDto compareResult = modelMapper.strictMapper().map(user, UserDto.class);
+        UserDto compareResult = mapper.toDto(user);
 
         assertEquals(compareResult, userService.findById(0L));       // 검색한 결과와 일치 할 경우
         assertThrows(ApiException.class, () -> userService.findById(0L));     // 조회된 결과가 없을 경우

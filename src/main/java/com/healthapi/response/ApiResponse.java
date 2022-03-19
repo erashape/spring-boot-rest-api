@@ -8,7 +8,6 @@ import lombok.ToString;
 @Getter
 @NoArgsConstructor
 public class ApiResponse<T> {
-
     private ResponseCode responseCode;
     private String message;
     private T data;
@@ -27,7 +26,12 @@ public class ApiResponse<T> {
         this.message = responseCode.getMessage();
     }
 
+    public static ApiResponse<String> ok() {
+        return new ApiResponse<>(ResponseCode.OK);
+    }
+
     public static <T> ApiResponse<T> result(T data) {
         return new ApiResponse<>(ResponseCode.OK, data);
     }
+
 }
